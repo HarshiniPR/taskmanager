@@ -90,11 +90,13 @@ const Tasklist = () => {
           onRename={(newName) => renameTask(index, newName)}
         />
       ))}
-      <div className="progress">
-        <div>
-          Progress: {completedCount}/{totalCount} ({progress.toFixed(2)}%)
+      {tasks.length > 0 && (
+        <div className="progress">
+          <div>
+            Progress: {completedCount}/{totalCount} ({progress.toFixed(2)}%)
+          </div>
         </div>
-      </div>
+      )}
     </>
   );
 };
