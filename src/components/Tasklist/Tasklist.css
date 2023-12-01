@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+}
+
+.task-form {
+  display: flex;
+  justify-content: center;
+}
+
+.input-group {
+  width: 50%; /* Make the input group take full width */
+}
+
+.form-control {
+  width: 5rem;
+  flex-grow: 1;
+  border-radius: 4px;
+}
+
+.btn {
+  border-radius: 0 4px 4px 0;
+}
+
+.progress {
+  margin-top: 20px;
+}
+
+/* Optional: Add some responsive styles */
+@media (max-width: 768px) {
+  main {
+    margin: 20px;
+  }
+}
