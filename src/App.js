@@ -5,6 +5,7 @@ import "./App.css";
 function App() {
   return (
     <main>
+      <h3>TaskSwift - Stay Organized</h3>
       <Tasklist />
     </main>
   );

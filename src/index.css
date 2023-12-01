@@ -3,3 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  /* background: rgba(205, 193, 240, 0.11); */
+  background: rgba(237, 205, 242, 0.11);
+}

@@ -1,39 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+.section-task{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .taskname {
-  margin-top: 5px;
-  padding: 5px;
-  background-color: beige;
+  margin-top: 10px;
+  padding: 7px;
+background: rgba(110, 22, 178, 0.17);
+  border-radius: 7px;
   display: flex;
-  justify-content: center;
-  border-bottom: 1px solid #ddd;
-  min-width: 700px;
+  justify-content: space-between;
+  min-width: 500px;
   width: 50%;
+  color: rgba(110, 22, 178, 0.69);
+  align-items: center;
 }
-/* Tasks.css */
-/* .taskname {
-    display: flex;
-    align-items: center;
-    margin-bottom: 8px;
-  } */
+
+.input-group{
+  border: 1px solid rgba(110, 22, 178, 0.50);
+  border-radius: 0.625rem;
+background: rgba(110, 22, 178, 0.05);
+box-shadow: 0px 4px 4px 0px rgba(110, 22, 178, 0.50);
+  
+}
+#button-addon2{
+  border: none !important;
+}
 
 .completed {
-  opacity: 0.5;
+  opacity: 0.8;
   text-decoration: line-through;
-  transition: opacity 0.3s, text-decoration 0.8s;
+  transition: opacity 0.8s, text-decoration 0.8s;
 }
 .taskbox{
     margin-right: 7px;
+    min-height: 1.2rem;
+    min-width: 1.2rem;
 }
-/* tasks.css */
+.editform {
+  padding: 5px !important;
+  margin: 10px auto 0;
+}
+
+.newinput {
+  display: flex;
+  justify-content: space-between;
+  min-width: 500px; 
+  width: 100%;
+}
 
 
-.taskbox {
-  margin-right: 10px;
+.check-task{
+  display: flex;
+}
+.icons{
+  margin-left: 1rem;
+  margin-right: 0.3rem;
+  min-width: 45px;
 }
 
 .completed {
@@ -52,18 +84,19 @@
 }
 
 .delete {
-  color: #dc3545;
+  color: #2c0236;
 }
 
 .edit {
   color: #007bff;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .save {
-  color: #28a745;
+  color: #007bff;
+  margin-right: 12px;
 }
 
 .cancel {
-  color: #ffc107;
+  color: #2c0234;
 }

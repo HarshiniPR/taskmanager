@@ -48,6 +48,13 @@ const Tasklist = () => {
       return newTasks;
     });
   }
+  
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault(); // Prevent form submission
+      handleAddTask();
+    }
+  };
 
   return (
     <>
@@ -61,6 +68,7 @@ const Tasklist = () => {
             aria-describedby="button-addon2"
             value={taskInput}
             onChange={(e) => setTaskInput(e.target.value)}
+            onKeyDown={handleKeyDown}
           />
           <button
             className="btn btn-outline-secondary"
@@ -83,9 +91,9 @@ const Tasklist = () => {
         />
       ))}
       <div className="progress">
-        <p>
+        <div>
           Progress: {completedCount}/{totalCount} ({progress.toFixed(2)}%)
-        </p>
+        </div>
       </div>
     </>
   );
